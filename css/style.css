@@ -323,17 +323,10 @@ h6 { font-size: var(--text-base); }
 }
 
 .logo__mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-teal-dark) 100%);
-    color: var(--color-white);
     font-family: var(--font-heading);
     font-size: var(--text-xl);
     font-weight: var(--font-extrabold);
-    border-radius: var(--radius-lg);
+    color: var(--color-teal);
     letter-spacing: -0.02em;
 }
 
@@ -343,6 +336,18 @@ h6 { font-size: var(--text-base); }
     font-weight: var(--font-bold);
     color: var(--color-charcoal);
     letter-spacing: -0.02em;
+}
+
+.logo__icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo__text-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
 }
 
 /* Navigation */
@@ -781,6 +786,12 @@ h6 { font-size: var(--text-base); }
     height: 32px;
 }
 
+.service-card__icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
 .service-card__title {
     font-size: var(--text-xl);
     margin-bottom: var(--space-3);
@@ -1113,6 +1124,12 @@ h6 { font-size: var(--text-base); }
 .service-detail__icon svg {
     width: 32px;
     height: 32px;
+}
+
+.service-detail__icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .service-detail__icon--emergency {
@@ -1806,9 +1823,8 @@ h6 { font-size: var(--text-base); }
 }
 
 .footer__logo .logo__mark {
-    width: 40px;
-    height: 40px;
     font-size: var(--text-lg);
+    color: var(--color-teal-light);
 }
 
 .footer__logo .logo__text {
@@ -1915,6 +1931,21 @@ h6 { font-size: var(--text-base); }
 .footer__org {
     color: var(--color-gray-500);
     font-size: var(--text-sm);
+}
+
+.footer__attribution {
+    color: var(--color-gray-500);
+    font-size: var(--text-xs);
+}
+
+.footer__attribution a {
+    color: var(--color-gray-400);
+    text-decoration: underline;
+    transition: color var(--transition-fast);
+}
+
+.footer__attribution a:hover {
+    color: var(--color-white);
 }
 
 /* ==========================================================================
